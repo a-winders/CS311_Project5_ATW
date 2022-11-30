@@ -3,22 +3,10 @@ body{
     padding: 0px;
 }
 
-#container{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
 
-#poet{
-    
-    padding: 10px;
-    width: 500px;
-    height: 800px;
-    background-color: #98B4AA;
-  
-}
 
-h1{
-    color: black;
-    background-color: red;
-}
+
+
+
+
+
