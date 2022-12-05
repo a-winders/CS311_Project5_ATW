@@ -1,10 +1,54 @@
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Input boxes for questions, user-generated mad libs, etc. */
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px; /* padding area between black border and rest of the container*/
+    border: 8px black solid; /*the literal black border around your container*/
 }
 
 
+/* User-generated Mad Lib */
+#madlib{
+    font-size: 300%;
+    height: 500px;
+    width: 500px; 
+    display: none;
+    border: 2px red solid;
+    padding: 10px;
+    text-align: left;
+    border: 2 blue solid;
+}
 
+/* Boxes for questions */
+#questions{
+    font-size: 150%;
+    width: 800px;
+    border: 5px red solid;
+}
+
+
+input, button{
+    font-size: 100%;
+}
+
+
+/* User-input question boxes */
+.words{
+    color: red;
+    border: 1px solid blue;
+    font-size: 125%;
+}
+
+/* Heading */
+h1{
+    font-size: 300%;
+}
 
 
 

@@ -10,83 +10,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title> Mad Libs </title>
-        <link rel="stylesheet" href="properties.css" />
+        <link rel="stylesheet" href="css/properties.css" />
     </head>
 
     <body> 
         
+        <!-- Input Page -->
+        <h1> Mad Libs by Adam</h1>
         <div id="container">
-        <center><h1> Mad Libs by Adam Winders </h1></center>
+            <img src="img/words.jpg" alt="random words" />
+            <div id="questions">
+                <label for="input-name">Enter a name: </label>
+                <input id="input-name" name="input-name"> <br />
+                <label for="input-adjective">Enter an adjective: </label>
+                <input id="input-adjective" name="input-adjective"> <br />
+                <label for="input-noun">Enter a noun: </label>
+                <input id="input-noun" name="input-noun"> <br /> <br />
 
-        <div class ="img">
-        <div id="picture">
-            <p> <img margin: 0px 15px 15px 0px; src="img/words.jpg" width="500" height="500" />
-            </div> 
-        </div>
+                <button id="show-madlib" onclick="processMadLib()"> Show Mad Lib </button>
+            </div>
 
+            <div id="madlib">
+                <p> Please excuse <span id="output-name" class="words"> </span> who is far too
+                <span id="output-adjective" class="words"> </span> to attend 
+                <span id="output-noun" class="words"> </span>
+                class.</p>
 
-      <center> <div style="border:10px solid #e41515;">
-            
+                <button id="refresh" onclick="(function(){location.reload();})();">Reset</button>
+            </div>
+
+            </div>
+
+        <script src='js/madlib.js'> </script>
         
-            <td>
-            <strong>Enter a name</strong>  <br />
-                <input type="text" name="box1" id="box1">
-            </td>
-            
-            <p>
-                <strong>Enter an adjective</strong> <br />
-            <input type="text" name="box2" id="box2">
-            </p>
-            
-            <p>
-                <strong>Enter a verb</strong> <br />
-            <input type="text" name="box3" id="box3">
-            </p>
-
-            <p>
-                <strong>Enter an adjective</strong> <br />
-            <input type="text" name="box4" id="box4">
-            </p>
-
-            <p>
-                <strong>Enter a noun</strong> <br />
-            <input type="text" name="box5" id="box5">
-            </p>
-
-            <p>
-                <strong>Enter an adjective</strong> <br />
-            <input type="text" name="box6" id="box6">
-            </p>
-
-            <p>
-                <strong>Enter a name</strong> <br />
-            <input type="text" name="box7" id="box7">
-            </p>
-
-            <p>
-                <strong>Enter a verb</strong> <br />
-            <input type="text" name="box8" id="box8">
-            </p>
-
-            <p>
-                <strong>Enter an adjective</strong> <br />
-            <input type="text" name="box9" id="box9">
-            </p>
-
-            <p>
-                <strong>Enter a verb</strong> <br />
-            <input type="text" name="box10" id="box10">
-            </p>
-            
-            <p>
-                <button id="add-poem" onclick="addMadLib()"> Show Mad Lib </button>
-            </p>
-        </div>
-        </div>
-    </div>
-      </center>
-
-        <script></script>
-
-    </body>
+</body>
 </html>
